@@ -24,3 +24,13 @@ resource "aws_s3_object" "random" {
 
   tags = local.common_tags
 }
+
+
+resource "aws_s3_bucket" "fa_images_238" {
+  bucket = "fa-images-238"
+
+  tags = {
+    imported_at = "25/05/2022"
+    managed_by  = "terraform"
+  }
+}
